@@ -1,0 +1,61 @@
+@keyframes skeletonText-loading {
+  0% {
+    background-color: hsl(200, 20%, 65%);
+  }
+  100% {
+    background-color: hsl(33, 100%, 95%);
+  }
+}
+
+@keyframes skeletonIcon-loading {
+  0% {
+    color: hsl(200, 20%, 65%);
+    fill: hsl(280, 41%, 75%);
+  }
+  100% {
+    color: hsl(200, 20%, 15%);
+    fill: hsl(280, 41%, 25%);
+  }
+}
+
+@keyframes skeletonItem-loading {
+  0% {
+    background-color: hsl(280, 41%, 15%);
+  }
+  100% {
+    background-color: hsl(280, 41%, 25%);
+  }
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeletonTodoItemList {
+  animation: skeletonItem-loading 1s linear infinite alternate;
+}
+.skeletonCheckIcon {
+  animation: skeletonIcon-loading 0.5s linear infinite alternate;
+}
+
+.skeletonCloseIcon {
+  width: 18px;
+  margin: 5px;
+  font-size: 18px;
+  opacity: 1;
+  animation: skeletonIcon-loading 0.5s linear infinite alternate;
+}
+
+.skeletonText {
+  width: 90%;
+  height: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 1rem;
+  animation: skeletonText-loading 0.5s linear infinite alternate;
+}
+
+.skeletonText:last-child {
+  width: 70%;
+  margin-bottom: 0;
+  animation: skeletonText-loading 1s linear infinite alternate;
+}

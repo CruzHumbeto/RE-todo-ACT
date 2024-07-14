@@ -1,0 +1,9 @@
+.inputTask {
+  width: 50vw;
+  height: 2rem;
+  margin: 2vh 25vw 0 25vw;
+  border-radius: 5px;
+  text-align: center;
+  background-color: inherit;
+  color: bisque;
+}

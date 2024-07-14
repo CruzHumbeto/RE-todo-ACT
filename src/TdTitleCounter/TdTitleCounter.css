@@ -1,0 +1,10 @@
+/* TdTitleCounter.css */
+.tdTitleCounter-message {
+  font-size: 24px;
+}
+
+.tdTitleCounter-message .tdTitleCounter-number {
+  color: rgb(100, 154, 246);
+  font-weight: bolder;
+  font-size: 28px;
+}

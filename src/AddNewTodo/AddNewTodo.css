@@ -1,0 +1,26 @@
+.addButton {
+  padding: 3px;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 2.5vh;
+  right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 5px 30px rgb(81, 1, 81);
+  font-size: 38px;
+  background-color: darkmagenta;
+}
+
+.addButton:hover {
+  background-color: red;
+  box-shadow: 0px 0px 25px rgb(255, 149, 0);
+}
+
+.addButton > .circlePlus {
+  color: rgb(100, 154, 246);
+}
