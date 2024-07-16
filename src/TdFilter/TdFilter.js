@@ -1,6 +1,9 @@
+import React from "react";
 import "./TdFilter.css";
+import { TodoContext } from "../TodoContext/TodoContext";
 
-function TdFilter({ serchValue, setSerchValue }) {
+function TdFilter() {
+  const { serchValue, setSerchValue } = React.useContext(TodoContext);
   return (
     <input
       className="inputTask"

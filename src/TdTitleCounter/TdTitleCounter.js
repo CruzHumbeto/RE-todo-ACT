@@ -1,6 +1,14 @@
+import React from "react";
 import "./TdTitleCounter.css";
+import { TodoContext } from "../TodoContext/TodoContext";
 
-function TdTitleCounter({ tdCompleted, tdToComplete, tdLoading }) {
+function TdTitleCounter() {
+  const {
+    loading: tdLoading,
+    completedTodos: tdCompleted,
+    totalTodos: tdToComplete,
+  } = React.useContext(TodoContext);
+
   const NumberSpan = ({ children }) => (
     <span className="tdTitleCounter-number">{children}</span>
   );

@@ -1,3 +1,4 @@
+import React from "react";
 import { TdTitleCounter } from "../TdTitleCounter/TdTitleCounter";
 import { TdFilter } from "../TdFilter/TdFilter";
 import { TodoList } from "../TodoList/TodoList";
@@ -6,28 +7,17 @@ import { AddNewTodo } from "../AddNewTodo/AddNewTodo";
 import { TodosLoading } from "../TodosLoading/TodosLoading";
 import { TodosError } from "../TodosError/TodosError";
 import { EmptyTodos } from "../EmptyTodos/EmptyTodos";
+import { TodoContext } from "../TodoContext/TodoContext";
 import "./App.css";
 
-function AppUI({
-  loading,
-  error,
-  completedTodos,
-  totalTodos,
-  serchValue,
-  setSerchValue,
-  filteredTodo,
-  changeCompleted,
-  deleteTodo,
-}) {
+function AppUI() {
+  const { loading, error, filteredTodo, changeCompleted, deleteTodo } =
+    React.useContext(TodoContext);
   return (
     <>
       <h1>RE : TODO : ACT</h1>
-      <TdTitleCounter
-        tdCompleted={completedTodos}
-        tdToComplete={totalTodos}
-        tdLoading={loading}
-      />
-      <TdFilter serchValue={serchValue} setSerchValue={setSerchValue} />
+      <TdTitleCounter />
+      <TdFilter />
       <TodoList>
         {loading && (
           <>
