@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { useLocalStorage } from "./UseLocalStorage";
 
 const TodoContext = React.createContext();
@@ -12,6 +12,7 @@ function TodoProvider({ children }) {
   } = useLocalStorage("RE:todo:ACT-v1", []);
 
   const [serchValue, setSerchValue] = React.useState("");
+  const [openModal, setOpenModal] = React.useState(false);
 
   const totalTodos = todos.length;
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
@@ -19,6 +20,15 @@ function TodoProvider({ children }) {
   const filteredTodo = todos.filter((todo) =>
     todo.texto.toLowerCase().includes(serchValue.toLowerCase())
   );
+
+  const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      texto: text,
+      completed: false,
+    });
+    saveTodos(newTodos);
+  };
 
   const changeCompleted = (text) => {
     const newTodos = [...todos];
@@ -45,8 +55,11 @@ function TodoProvider({ children }) {
         serchValue,
         setSerchValue,
         filteredTodo,
+        addTodo,
         changeCompleted,
         deleteTodo,
+        openModal,
+        setOpenModal,
       }}
     >
       {children}

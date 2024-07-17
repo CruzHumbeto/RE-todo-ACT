@@ -1,12 +1,12 @@
 import { GrAddCircle } from "react-icons/gr";
 import "./AddNewTodo.css";
 
-function AddNewTodo() {
+function AddNewTodo({ setOpenModal }) {
   return (
     <button
       className="addButton"
-      onClick={(Event) => {
-        console.log(Event);
+      onClick={() => {
+        setOpenModal((state) => !state);
       }}
     >
       <GrAddCircle className="circlePlus" />

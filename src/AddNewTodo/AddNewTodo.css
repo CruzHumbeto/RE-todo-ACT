@@ -8,17 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   border: none;
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0px 5px 30px rgb(81, 1, 81);
   font-size: 38px;
   background-color: darkmagenta;
+
+  transform: rotate(0);
+  transition: 0.3s ease;
 }
 
 .addButton:hover {
   background-color: red;
   box-shadow: 0px 0px 25px rgb(255, 149, 0);
+  transform: rotate(224deg);
 }
 
 .addButton > .circlePlus {

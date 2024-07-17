@@ -1,0 +1,55 @@
+form {
+  padding: 10px 5px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  border: 3px solid rgb(62, 56, 47);
+  border-radius: 10px;
+}
+
+form:hover {
+  border: 3px solid bisque;
+  box-shadow: 0 0 2.5rem 10px bisque;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 10px;
+  color: bisque;
+  background-color: #303030;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.TodoForm-buttonContainer {
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.TodoForm-button {
+  padding: 3px 15px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+.TodoForm-button--cancel {
+  background-color: #cd3545;
+  color: antiquewhite;
+}
+
+.TodoForm-button--create {
+  background-color: rgb(100, 154, 246);
+  color: antiquewhite;
+}

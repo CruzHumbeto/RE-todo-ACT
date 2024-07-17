@@ -17,15 +17,17 @@ function TdTitleCounter() {
     return <h2 className="tdTitleCounter-message">Loading TODOs ...</h2>;
   }
 
-  if (tdCompleted === tdToComplete) {
+  if (tdToComplete === 0) {
     return (
-      <h2 className="tdTitleCounter-message">Congrats, all tasks done! 😎</h2>
+      <h2 className="tdTitleCounter-message">
+        You don't have any task 🤷🏽‍♂️ create a new one
+      </h2>
     );
   }
 
-  if (tdToComplete === 0) {
+  if (tdCompleted === tdToComplete) {
     return (
-      <h2 className="tdTitleCounter-message">You don't have any TODOs 🤷🏽‍♂️</h2>
+      <h2 className="tdTitleCounter-message">Congrats, all tasks done! 😎</h2>
     );
   }
 
