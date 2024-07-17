@@ -1,9 +1,17 @@
 .inputTask {
   width: 50vw;
   height: 2rem;
-  margin: 2vh 25vw 0 25vw;
-  border-radius: 5px;
+  margin: auto;
+  margin-top: 1rem;
+  display: block;
+  border: none;
+  border-radius: 10px;
   text-align: center;
-  background-color: inherit;
-  color: bisque;
+  background-color: #303030;
+  color: azure;
+  transition: height 0.2s ease;
+}
+
+.inputTask:active {
+  height: 2.2rem;
 }

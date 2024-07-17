@@ -21,7 +21,7 @@
 }
 
 .addButton:hover {
-  background-color: red;
+  background-color: #f79d16;
   box-shadow: 0px 0px 25px rgb(255, 149, 0);
   transform: rotate(224deg);
 }

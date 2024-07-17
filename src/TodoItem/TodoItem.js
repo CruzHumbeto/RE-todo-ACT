@@ -10,7 +10,7 @@ function TodoItem(props) {
     <GoCheckCircle className="toCompleteCircularCheck" />
   );
   return (
-    <li className="todoItemList">
+    <li className="todoItemList" draggable="true">
       <span className="todoItemList-check" onClick={props.onComplete}>
         {validate}
       </span>
