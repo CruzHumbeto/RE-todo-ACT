@@ -8,7 +8,7 @@ RE:todo:ACT es una aplicación sencilla pero poderosa para gestionar tus tareas 
 
 También puedes ver la aplicación en vivo en el link de [GitHub Pages](https://cruzhumbeto.github.io/RE-todo-ACT/).
 
-[captura de pantalla de la aplicacion]()
+![captura de pantalla de la aplicacion](https://github.com/CruzHumbeto/RE-todo-ACT/blob/main/imgs/HnVideoEditor_2024_07_19_222032179.gif)
 
 ## Características
 
