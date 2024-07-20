@@ -1,75 +1,60 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# RE:todo:ACT - ToDo App con React
 
-¡Hola, Platzinauta!
+¡Bienvenido al repositorio de mi aplicación ToDo desarrollada con React! Este proyecto es parte de las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs) de Platzi.
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+## Descripción del Proyecto
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+RE:todo:ACT es una aplicación sencilla pero poderosa para gestionar tus tareas diarias. Esta aplicación permite agregar, eliminar y marcar tareas como completadas, brindándote una manera eficiente de organizar tu tiempo y tus actividades.
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+También puedes ver la aplicación en vivo en el link de [GitHub Pages](https://cruzhumbeto.github.io/RE-todo-ACT/).
 
-## Getting Started with Create React App
+[captura de pantalla de la aplicacion]()
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Características
 
-## Available Scripts
+- **Agregar tareas**: Añade nuevas tareas a tu lista.
+- **Eliminar tareas**: Elimina tareas que ya no son relevantes.
+- **Marcar tareas completadas**: Marca las tareas que ya has terminado.
+- **Interfaz intuitiva**: Diseño simple y fácil de usar.
+- **Persistencia de datos**: Almacena las tareas en el almacenamiento local del navegador para que no se pierdan al recargar la página.
 
-In the project directory, you can run:
+## Tecnologías Utilizadas
 
-### `npm start`
+- **React**: Biblioteca principal para construir la interfaz de usuario.
+- **JavaScript (ES6+)**: Lenguaje de programación utilizado.
+- **HTML5 y CSS3**: Para el marcado y estilos de la aplicación.
+- **LocalStorage**: Para la persistencia de datos en el navegador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalación y Configuración
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/CruzHumbeto/RE-todo-ACT/tree/main
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navega al directorio del proyecto:
+   ```bash
+   cd ubicación-del-repositorio
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
+5. Abre tu navegador y navega a http://localhost:3000 para ver la aplicación en acción.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cómo Contribuir
 
-### `npm run eject`
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
