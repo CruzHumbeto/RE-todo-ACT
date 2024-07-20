@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RE-todo-ACT/static/css/main.edcade8b.css",
+    "main.js": "/RE-todo-ACT/static/js/main.cf25c87f.js",
+    "index.html": "/RE-todo-ACT/index.html",
+    "static/media/delete.svg": "/RE-todo-ACT/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "main.edcade8b.css.map": "/RE-todo-ACT/static/css/main.edcade8b.css.map",
+    "main.cf25c87f.js.map": "/RE-todo-ACT/static/js/main.cf25c87f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edcade8b.css",
+    "static/js/main.cf25c87f.js"
+  ]
+}
